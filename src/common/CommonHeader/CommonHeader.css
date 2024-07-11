@@ -1,0 +1,187 @@
+
+.header-container{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--dark-trans);
+    position: fixed;
+    top: 5px;
+    left: 0;
+}
+
+.logo{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.search{
+    width: 500px;
+}
+
+.userdetails{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.userdetails .userpopup{
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 40px;
+    left: 0;
+    background-color: var(--transp-0);
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+.userdetails .userpopup p{
+    color: var(--white);
+    text-align: justify;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--white);
+}
+.userdetails .userpopup button{
+    color: var(--app_color);
+    align-self: center;
+    background-color: var(--white-trans);
+}
+.userdetails span{
+    padding-left: 5px;
+    color: var(--white);
+}
+
+#userClick{
+    cursor: pointer;
+}
+
+.cart{
+    display: flex;
+    align-items: center ;
+}
+.cart span{
+    color: var(--white);
+}
+
+.menu-contentBox{
+    height: 90vh;
+    background-color: var(--dark);
+    position: absolute;
+    top: 55px;
+    left: 0;
+    overflow: hidden;
+    transition: all .2s ease;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+    z-index: 5;
+}
+
+
+.menu-item-content{
+    width: 100% ;
+    padding:30px 10px;
+    height: calc(100%/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+    .menu-head{
+        align-self: center  ;
+        width: calc(100% - 50px);
+        padding-right: 10px;
+        border-radius: 10px;
+        text-align: right;
+        color: var(--app_color);
+        margin-bottom: 10px;
+        background-color: var(--transp);
+        box-shadow: 0px 2px  5px var(--white-trans);
+    }
+.menu-item-content .menu-item-group{
+    width: 100%;
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 10px;
+}
+.menu-item-content .menu-item{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    transition: all .1s ease-in-out;
+}
+.menu-item-content .menu-item:hover{
+    color:var(--app_color) ;
+}
+.menu-item-content .menu-item:active{
+    color:var(--app_color_light) ;
+}
+
+.logout{
+    color: var(--white);
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px 10px;
+    align-self:center;
+    transition: all .1s ease;
+}
+.logout:hover{
+    background-color: var(--app_color_light);
+}
+.contact{
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.contact p{
+    padding-left: 10px;
+}
+#menu:hover{    
+    box-shadow: 0px 0px 5px var(--white);
+}
+
+
+@media screen and (max-width:480px) {
+    .header-container{
+        padding: 5px 0px;
+    }
+    .logo{
+        width: 80px;
+    }
+    .search{
+        width: 200px;
+    }
+    .userdetails .userpopup{
+        width: 100px;
+        height: 100px;
+        top: 35px;
+        left: -35px;
+    }
+    .userdetails .userpopup p{
+        line-height: 2;
+       font-size: .8rem;
+    }
+    .userdetails span{
+        display: none;
+    }
+    .cart span{
+        display: none;
+    }
+}

@@ -1,0 +1,38 @@
+
+.banner-content{
+    min-width:280px;
+    min-height: 200px; 
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;     
+    z-index: -1;
+}
+
+.banner-content img{
+    min-width:280px;
+    height: 200px;
+    object-position: center;
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+.banner-content button{
+    background-color: var(--transp);
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+}
+@media screen and (max-width:480px) {
+    .banner-content{
+        padding: 3px;
+        min-width: 240px;
+        min-height: 200px;
+    }
+    .banner-content img{
+        min-width: 240px;
+        height: 200px;  
+    }
+}
